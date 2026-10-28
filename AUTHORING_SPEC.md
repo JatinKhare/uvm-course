@@ -89,7 +89,7 @@ uvm-course/
   AUTHORING_SPEC.md        <- this file
   PROGRESS.md              <- module status + one-line summaries (see §9)
   moduleNN-<slug>/
-    lesson.md
+    README.md (the lesson)
     example01.sv
     example02.sv           (only if needed; 1–2 total)
     exercise01.md          <- exercise statement (+ skeleton code with TODOs inside)
@@ -105,7 +105,7 @@ Nothing under `moduleNN-*/` reveals answers. Exercise skeletons are `.sv` code b
 embedded in `exerciseNN.md` (one file per exercise keeps tooling simple), OR a separate
 `exerciseNN.sv` if longer than ~80 lines — pick one convention at Module 01 and keep it.
 
-## 5. `lesson.md` — mandatory headings, in order
+## 5. `README.md` (the lesson) — mandatory headings, in order
 
 ```
 # Module NN — <Title>
@@ -222,7 +222,7 @@ Read AUTHORING_SPEC.md in full. We are building a 10-module UVM course for CPU
 verification interviews. We cannot run any simulator, so all UVM must be real UVM 1.2
 canonical code (spec §1).
 
-Task: author Module 01 exactly per the spec — lesson.md, example(s), exercises, solutions,
+Task: author Module 01 exactly per the spec — README.md (the lesson), example(s), exercises, solutions,
 check_your_understanding.md, MANIFEST.md — plus create PROGRESS.md with the Shared names
 section. Module 01 defines mini_cpu, mini_cpu_if, and the naming prefix, so choose them
 carefully and record them. Also decide the exercise-file convention (spec §4) and record it

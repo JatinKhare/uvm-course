@@ -15,16 +15,16 @@ Every module follows the same loop: **lesson → worked examples → exercises �
 
 | # | Topic | You will learn |
 |---|---|---|
-| 01 | UVM big picture & testbench architecture | layered testbench, components vs objects, `run_test()`, first test |
-| 02 | Phases, objections, factory | phase order, ending a test, overrides |
-| 03 | Transactions & sequences | instruction item, constraints, sequences, virtual sequences |
-| 04 | Driver, sequencer, monitor, agent | the handshake, active vs passive agents, config objects |
-| 05 | Configuration & connectivity | `uvm_config_db`, TLM ports, imps, FIFOs |
-| 06 | Scoreboard & reference model | retire-trace checking against an ISS |
-| 07 | Constrained random & sequence strategies | `dist`, `solve before`, layered generators, seeds |
-| 08 | Functional coverage | covergroups, crosses, closure, assertions vs coverage |
-| 09 | Register abstraction layer (RAL) | CSR model, adapter, mirror, frontdoor/backdoor |
-| 10 | Debug, integration & capstone | integrated bench, reset, bug injection, regression, 25 interview Q&A |
+| [01](module01-big-picture/) | UVM big picture & testbench architecture | layered testbench, components vs objects, `run_test()`, first test |
+| [02](module02-phases-objections-factory/) | Phases, objections, factory | phase order, ending a test, overrides |
+| [03](module03-transactions-sequences/) | Transactions & sequences | instruction item, constraints, sequences, virtual sequences |
+| [04](module04-driver-sequencer-monitor-agent/) | Driver, sequencer, monitor, agent | the handshake, active vs passive agents, config objects |
+| [05](module05-config-connectivity/) | Configuration & connectivity | `uvm_config_db`, TLM ports, imps, FIFOs |
+| [06](module06-scoreboard-reference-model/) | Scoreboard & reference model | retire-trace checking against an ISS |
+| [07](module07-constrained-random-sequences/) | Constrained random & sequence strategies | `dist`, `solve before`, layered generators, seeds |
+| [08](module08-functional-coverage/) | Functional coverage | covergroups, crosses, closure, assertions vs coverage |
+| [09](module09-register-abstraction-layer/) | Register abstraction layer (RAL) | CSR model, adapter, mirror, frontdoor/backdoor |
+| [10](module10-debug-integration-capstone/) | Debug, integration & capstone | integrated bench, reset, bug injection, regression, 25 interview Q&A |
 
 ## Layout
 
@@ -32,7 +32,7 @@ Every module follows the same loop: **lesson → worked examples → exercises �
 AUTHORING_SPEC.md          the rules the course was written to
 PROGRESS.md                module status and the shared names used across modules
 moduleNN-<topic>/
-  lesson.md                the lesson (story first, then mechanics, code, pitfalls, interview angle)
+  README.md                the lesson (story first, then mechanics, code, pitfalls, interview angle)
   example01.sv, example02.sv   complete examples, each ending with a hand-derived expected log
   exercise01..03.md        fill-in, debug and design exercises (no answers here)
 solutions/moduleNN/
